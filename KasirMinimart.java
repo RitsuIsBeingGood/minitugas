@@ -52,6 +52,19 @@ public class KasirMinimart {
 
     // Hapus data
     static void hapusData() {
+        System.out.println("\n======= DAFTAR BARANG =======");
+        System.out.printf("%-5s %-12s %-12s %-10s %-10s %-10s\n",
+                          "No", "Jenis", "Merk", "Harga", "Jumlah", "PPN Total");
+
+        for (int i = 0; i < jumlahData; i++) {
+            System.out.printf("%-5d %-12s %-12s %-10s %-10s %-10s\n",
+                              (i + 1),
+                              dataBarang[i][0],
+                              dataBarang[i][1],
+                              dataBarang[i][2],
+                              dataBarang[i][3],
+                              dataBarang[i][4]);
+        }
         System.out.print("\nMasukkan nomor data yang ingin dihapus: ");
         int index = Integer.parseInt(input.nextLine());
 
@@ -70,6 +83,19 @@ public class KasirMinimart {
 
     // Edit harga & jumlah berdasarkan merk
     static void editData() {
+        System.out.println("\n======= DAFTAR BARANG =======");
+        System.out.printf("%-5s %-12s %-12s %-10s %-10s %-10s\n",
+                          "No", "Jenis", "Merk", "Harga", "Jumlah", "PPN Total");
+
+        for (int i = 0; i < jumlahData; i++) {
+            System.out.printf("%-5d %-12s %-12s %-10s %-10s %-10s\n",
+                              (i + 1),
+                              dataBarang[i][0],
+                              dataBarang[i][1],
+                              dataBarang[i][2],
+                              dataBarang[i][3],
+                              dataBarang[i][4]);
+        }
         System.out.print("\nMasukkan merk barang yang ingin diedit: ");
         String cariMerk = input.nextLine();
 
